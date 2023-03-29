@@ -2,7 +2,7 @@
 
 /**
  * reset_to_90 - takes a pointer to an int parameter
- * 			and updates the value it pionts to 98
+ * and updates the value it pionts to 98
  *
  * 0n: int parameter
  *
