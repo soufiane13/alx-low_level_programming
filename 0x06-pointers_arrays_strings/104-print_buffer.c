@@ -1,88 +1,31 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * isPrintableSCII - function that return integer.
- * @n: integer input.
- * Return: an integer.
+ * cap_string - capitalizes all words of a string
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
-int isPrintableSCII(int n)
+
+char *cap_string(char *s)
 {
-	return (n >= 32 && n <= 126);
+int count = 0, i;
+int separators[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
+if (*(s + count) >= 97 && *(s + count) <= 122)
+*(s + count) = *(s + count) - 32;
+count++;
+while (*(s + count) != '\0')
+{
+for (i = 0; i < 13; i++)
+{
+if (*(s + count) == separators[i])
+{
+if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+*(s + (count + 1)) = *(s + (count + 1)) - 32;
+break;
 }
-
-/**
- * printHexes - function that start and end  buffer.
- * @b: character.
- * @end: end number.
- * @start: start number.
- * Return: Always 0.
- */
-
-
-void printHexes(char *b, int start, int end)
-{
-	int i = 0;
-
-	while (i < 10)
-	{
-		if (i < end)
-			printf("%02x", *(b + start + i));
-		else
-			print ("  ");
-		if (i % 2)
-			printf("  ");
-		i++;
-	}
 }
-
-/**
- * printASCII - function that prints ASCII.
- * @b: input character.
- * @start: start number.
- * @end: end number.
- * Return: Always 0.
- */
-
-
-void printASCII(char *b, int start, int end)
-{
-	int ch, i = 0;
-
-	while (i < end)
-	{
-		ch = *(b + i + start);
-		if (!isPrintableASCII(ch))
-			ch = 46;
-		printf("%c", ch);
-		i++;
-	}
+count++;
 }
-
-
-/**
- * print_buffer - function that prints a buffer.
- * @b: input character
- * @size: size of buffer.
- * Return: Always 0.
- */
-
-void print_buffer(char *b, int size)
-{
-	int start, end;
-
-	if (size > 0)
-	{
-		for (start = 0; start < size; start += 10)
-		{
-			end = (size - start < 10) ? size - start : 10;
-			printf("%08x: ", start);
-			printfHexes(b, start, end);
-			printf("\n");
-
-		}
-	} else
-		printf("\n");
-
+return (s);
 }
