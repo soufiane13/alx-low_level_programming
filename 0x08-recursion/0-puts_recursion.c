@@ -2,7 +2,8 @@
 
 /**
  * _puts_recursion -  a function that print a string followed by new line.
- * %s: variable pointe to a string
+ * @s: variable pointe to a string
+ *
  * Return: void nothing
 */
 
@@ -11,7 +12,7 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		_putchar('\n')
+		_putchar('\n');
 	}
 	else
 	{
