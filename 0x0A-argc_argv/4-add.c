@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 /**
  * main - add positive numbers
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 		for (c = argv[argc]; *c; c++)
 			if (*c < '0' || *c > '9')
 				return (print("Error\n"), 1);
-		s = s + atoi(argv[argc]);
+		s += atoi(argv[argc]);
 	}
 	printf("%d\n", s);
 	return (0);
