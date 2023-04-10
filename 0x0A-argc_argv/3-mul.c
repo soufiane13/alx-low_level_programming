@@ -8,9 +8,9 @@
  * Return: 0 succes, 1 error.
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int s;
+	int s = 0;
 
 	if (argc == 3)
 	{
