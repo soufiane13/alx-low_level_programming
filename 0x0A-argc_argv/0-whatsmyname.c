@@ -1,11 +1,14 @@
 #include <stdio.h>
 
+
 /**
- * main - function that print the name of programm
- * @argv: pointers list
- * @argc: integer 
+ * main - function that print the name of programm.
+ * @argv: pointers list.
+ * @argc: int
+ *
  * Return: always 0.
- */
+*/
+
 
 int main(int argc, char const *argv[])
 {
