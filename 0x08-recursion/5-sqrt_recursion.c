@@ -2,25 +2,36 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _sqrt_recursion - function return the natural squar root
+ * @n: given integer.
  *
- * Return: Always 0.
+ * Return: integer.
  */
-int main(void)
-{
-    int r;
 
-    r = _sqrt_recursion(1);
-    printf("%d\n", r);
-    r = _sqrt_recursion(1024);
-    printf("%d\n", r);
-    r = _sqrt_recursion(16);
-    printf("%d\n", r);
-    r = _sqrt_recursion(17);
-    printf("%d\n", r);
-    r = _sqrt_recursion(25);
-    printf("%d\n", r);
-    r = _sqrt_recursion(-1);
-    printf("%d\n", r);
-    return (0);
+int _sqrt_recursion(int n)
+{
+	return (_sqrt(n, 1));
+}
+
+/**
+ * _sqrt - finction calculate natural square of root
+ * @n: int
+ * @i: iterate number
+ *
+ * Return: the natural squre root
+ */
+
+int _sqrt(int n, int i)
+{
+	int sqrt;
+
+	sqrt = i * i;
+
+	if (sqrt > n)
+		return (-1);
+
+	if (sqrt == n)
+		return (i);
+
+	return (_sqrt(n, i + 1));
 }
