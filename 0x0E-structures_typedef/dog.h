@@ -5,9 +5,8 @@
  * struct dog - a new struct dog
  * @name: name of the dog
  * @age: age of the dog
- * @owner: owner of the dog
- *
- * Description: a new type of dog 
+ * @owner: owner of the dog.
+ * Description: a new type of dog.
  */
 
 struct dog
