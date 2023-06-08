@@ -33,7 +33,7 @@ int check(char *s, int start, int end, int m)
 		return (check(s, start + 1, end - 1, m));
 }
 /**
- * is_planderome -checked if a string is palindrom
+ * is_plinderome -checked if a string is palindrom
  * @s: poinetr to string
  * Return: 0 or 1
  */
