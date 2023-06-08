@@ -50,7 +50,7 @@ int wildcmp(char *s1, char *s2)
 		return (0);
 	if (*s2 == '*')
 	{
-		s2 = move _star(s2);
+		s2 = move_star(s2);
 		if (!*s2)
 			return (1);
 		if (*s1 == *s2)
