@@ -1,5 +1,5 @@
 #include "main.h"
-#include <srdio.h>
+#include <stdio.h>
 /**
  * is_prime_number - function prime number
  * @n: integer
