@@ -37,7 +37,7 @@ int check(char *s, int start, int end, int m)
  * @s: poinetr to string
  * Return: 0 or 1
  */
-int is_planderome(char *s)
+int is_plindrome(char *s)
 {
 	int end = l_index(s);
 
