@@ -22,7 +22,7 @@ int main(void)
 		fibo2 = sum;
 	}
 
-	fibo_half1 = fibo1 / 10000000000;
+	fibo1_half1 = fibo1 / 10000000000;
 	fibo2_half1 = fibo2 / 10000000000;
 	fibo1_half2 = fibo1 % 10000000000;
 	fibo2_half2 = fibo2 % 10000000000;
