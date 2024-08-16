@@ -22,7 +22,6 @@ int main(void)
 
 				if (dig1 == 7 && dig2 == 8 && dig3 == 9)
 					continue;
-				
 				putchar(',');
 				putchar(' ');
 			}
