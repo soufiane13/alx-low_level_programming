@@ -10,7 +10,7 @@ char **strtow(char *str);
  *            first word contained within a string.
  * @str: The string to be searched.
  *
- * Return: The index marking the end of the initial word 
+ * Return: The index marking the end of the initial word.
  */
 int word_len(char *str)
 {

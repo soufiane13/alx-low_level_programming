@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - Returns a pointer to a 2-dimensional array 
+ * alloc_grid - Returns a pointer to a 2-dimensional array.
  * @width: The width of array.
  * @height: The height of array.
  *
